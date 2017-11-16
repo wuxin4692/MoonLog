@@ -1,10 +1,10 @@
 package main
 
 import (
-	_ "MoonLog/routers"
+	_ "github.com/wuxin4692/MoonLog/routers"
 	"github.com/astaxie/beego/orm"
 	"github.com/astaxie/beego"
-	"MoonLog/models"
+	"github.com/wuxin4692/MoonLog/models"
 )
 func init() {
 	models.RegisterDb()

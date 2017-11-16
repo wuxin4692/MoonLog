@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
-	"MoonLog/models"
+	"github.com/wuxin4692/MoonLog/models"
 )
 
 type ServergroupController struct {

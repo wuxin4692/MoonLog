@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"MoonLog/controllers"
+	"github.com/wuxin4692/MoonLog/controllers"
 	"github.com/astaxie/beego"
 )
 
