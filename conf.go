@@ -11,14 +11,14 @@ type Conf struct {
 	Time int       `yaml:"time"`
 }
 
-func ReadConf(filepath string) *Conf {
+func ReadConf(FilePath string) *Conf {
 	conf := new(Conf)
-	yamlfile,err := ioutil.ReadFile(filepath)
+	YamlFile,err := ioutil.ReadFile(FilePath)
 	if err != nil {
 		fmt.Println(err)
 	}
-	Err := yaml.Unmarshal(yamlfile,conf)
-	if err != nil {
+	Err := yaml.Unmarshal(YamlFile,conf)
+	if Err != nil {
 		fmt.Println(Err)
 	}
 	return conf

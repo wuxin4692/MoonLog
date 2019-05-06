@@ -39,9 +39,11 @@ func main() {
 		if err != nil {
 			return
 		}
+
 		Data := make([]byte, StartSize)
 		file.ReadAt(Data,StartSize)
-		fmt.Println(string(Data[:]))
+
+
 		StartSize = GetFileSize(FileName)
 	}
 }
